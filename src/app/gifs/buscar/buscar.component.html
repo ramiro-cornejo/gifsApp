@@ -1,4 +1,10 @@
 <div class="col">
     <h5>Ingresar busqueda:</h5>
-    <input type="text" class="form-control" placeholder="Nombre de Gifs">
+    <input 
+        type="text" 
+        class="form-control" 
+        placeholder="Nombre de Gifs"
+        (keyup.enter)="buscar()"
+        #txtBuscar
+    >
 </div>
